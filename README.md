@@ -1,8 +1,8 @@
 # Image classification papers and cases
 
-This repository uses Pytorch to implement the popular CNN architectures, using the dataset CIFAR. The following is the reference paper:
+This repository uses Pytorch to implement the popular CNN architectures, using the dataset CIFAR. The following is the reference paper.
 
-## Architecture
+## Image classification paper
 
  * (lenet)[LeNet-5, convolutional neural networks](http://yann.lecun.com/exdb/lenet/)
  * (alexnet) [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks)
@@ -32,7 +32,7 @@ This repository uses Pytorch to implement the popular CNN architectures, using t
 
 ## Requirements
 
-*  Python >= 3.5
+* Python >= 3.5
 * PyTorch = 0.4 or 1.0
 * Tensorboard (if you want to use the tensorboard for visualization)
 * pyyaml, easydict, tensorboardX
@@ -41,21 +41,21 @@ This repository uses Pytorch to implement the popular CNN architectures, using t
 
   Run the command for training as following:
 
-  >##1. GPU for lenet 
+  >1. GPU for lenet 
  
-  python -u train.py --work-path ./experiments/cifar10/lenet  
+  python -u train.py --work-path ./examples/Cifar10/Lenet  
 
-  ##resume from checkpoint  
+  >3. Resume from checkpoint  
 
-  python -u train.py --work-path ./experiments/cifar10/lenet --resume  
+  python -u train.py --work-path ./examples/Cifar10/Lenet --resume  
 
-  ##2. GPUs for resnet1202  
+  >2. GPUs for Resnet1202  
 
-  CUDA_VISIBLE_DEVICES=0,1 python -u train.py --work-path ./experiments/cifar10/preresnet20  
+  CUDA_VISIBLE_DEVICES=0,1 python -u train.py --work-path ./examples/Cifar10/Preresnet-20  
 
-  ##4 GPUs for densenet190bc  
+  >4. GPUs for Densenet190bc  
 
-  CUDA_VISIBLE_DEVICES=0,1,2,3 python -u train.py --work-path ./experiments/cifar10/densenet100bc  
+  CUDA_VISIBLE_DEVICES=0,1,2,3 python -u train.py --work-path ./examples/Cifar10/Densenet100bc  
   
 
 If you think this item is useful to you, please give me a star，thank you~
